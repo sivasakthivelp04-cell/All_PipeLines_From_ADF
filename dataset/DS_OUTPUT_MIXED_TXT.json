@@ -1,0 +1,19 @@
+{
+	"name": "DS_OUTPUT_MIXED_TXT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_OUTPUT_MIXED_TXT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Only_TXT",
+				"fileSystem": "mixedtoseparatefiles"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

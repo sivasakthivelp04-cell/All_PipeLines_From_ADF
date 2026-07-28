@@ -1,0 +1,30 @@
+{
+	"name": "PL_StoreProcedure_EmployeeSalary",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP_StoreProcedure_EmployeeSalary",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[IncreaseEmployeeSalary]"
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_StoreProcedure_EmployeeSalary",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-04T03:08:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,12 @@
+{
+	"name": "LS_OUTPUT_MIXED_TXT",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsstorageaccount002.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDBGQkZCRjM0LTI1RkYtNEE4NS1CNjYxLTZGMEFBREU4OEYxOV9iMmY3ZDE5Yy0xYmY0LTRjYjMtOWExMC03MDlhOTdjZDQ1Y2MiDQp9"
+		}
+	}
+}

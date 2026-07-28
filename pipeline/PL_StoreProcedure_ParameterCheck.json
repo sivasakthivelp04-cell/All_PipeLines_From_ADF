@@ -1,0 +1,36 @@
+{
+	"name": "PL_StoreProcedure_ParameterCheck",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP_StoreProcedure_ParameterCheck",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[IncreaseSalary]",
+					"storedProcedureParameters": {
+						"Amount": {
+							"value": "1000",
+							"type": "Int32"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_StoreProcedure_EmployeeSalary",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-07-04T03:10:47Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

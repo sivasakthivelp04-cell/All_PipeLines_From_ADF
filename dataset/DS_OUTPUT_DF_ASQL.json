@@ -1,0 +1,41 @@
+{
+	"name": "DS_OUTPUT_DF_ASQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_OUTPUT_DF_ASQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EmployeeID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "EmployeeName",
+				"type": "varchar"
+			},
+			{
+				"name": "Department",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Bonus",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "HighSalaryEmployee"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

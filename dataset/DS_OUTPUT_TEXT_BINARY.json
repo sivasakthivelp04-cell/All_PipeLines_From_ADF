@@ -1,0 +1,18 @@
+{
+	"name": "DS_OUTPUT_TEXT_BINARY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_OUTPUT_TEXT_BINARY",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "textbinaryoutput"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

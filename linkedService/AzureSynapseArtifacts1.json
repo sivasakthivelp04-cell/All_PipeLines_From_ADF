@@ -1,0 +1,13 @@
+{
+	"name": "AzureSynapseArtifacts1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://synapseforpractical.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/330ba8dd-d9ca-4d9f-af43-9a78d39380a7/resourceGroups/rg_temp_all_3_assignments/providers/Microsoft.Synapse/workspaces/synapseforpractical"
+		}
+	}
+}

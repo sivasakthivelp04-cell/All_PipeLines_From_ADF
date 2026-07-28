@@ -1,0 +1,19 @@
+{
+	"name": "DS_OUTPUT_MIXED_PPTX",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_OUTPUT_MIXED_PPTX",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Only_PPT",
+				"fileSystem": "mixedtoseparatefiles"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
